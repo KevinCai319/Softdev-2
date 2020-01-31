@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Avocado Team Test Template Thing</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <Center>
+            <h1> Hello! We are team Avocado, and this is our Jinja test. </h1>
+            <h2> The random occupation generated is: {{ rand }}</h2>
+        </Center>
+        <table>
+            <caption>Labor statistics:</caption>
+            <tr><td>Occupation</td><td>% of population</td></tr>
+            {% for item in collection %}
+            <tr>
+                <td>{{item}}</td>
+                <td>{{collection[item]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

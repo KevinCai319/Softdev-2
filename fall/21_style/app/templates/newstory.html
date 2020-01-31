@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+
+{% from "_macros.html" import do_flashes %}
+
+{% block content %}
+
+    <div align="right">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('stories') }}">Story Hub</a>
+        <a href="{{ url_for('profile') }}">My Profile</a><br>
+        <a href="{{ url_for('logout') }}">Log Out</a>
+    </div>
+
+    <h1>Create a New Story</h1>
+
+    {{ do_flashes() }}
+
+    <form method="post">
+        <label for="title">Title:</label>
+        <input id="title" name="title" type="text" minlength="3" maxlength="50"><br><br>
+
+        Write your story here:<br>
+        <textarea id="content" name="content" minlength="10" maxlength="2500" rows="10" cols="100"></textarea><br><br>
+
+        <input type="submit" value="Post Story">
+    </form>
+
+{% endblock content %}

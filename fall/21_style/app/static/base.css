@@ -1,0 +1,27 @@
+body{
+  display: block;
+  margin: 12px;
+  background-color: #457B9D;
+  font-family: Arial;
+}
+h1{
+  color : #A8DADC;
+}
+a{
+  background-color: #1D3557;
+  color: #A8DADC;
+  padding: 14px 25px;
+  margin: 2px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: #A8DADC;
+  color: #1D3557;
+  text-decoration: underline;
+}
+input:hover, input:active {
+  background-color: #A8DADC;
+  color: #1D3557;
+}

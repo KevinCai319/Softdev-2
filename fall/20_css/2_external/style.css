@@ -1,0 +1,43 @@
+body{
+  font-family: sans-serif;
+  background-color: #666666;
+}
+h1{
+  text-align: center;
+  background-color: #BEBEBE;
+  color: white;
+  padding:3px;
+  margin: 0;
+}
+.main{
+  background-color: #767676;
+  padding: 1px;
+}
+.box{
+  margin-top: 10px;
+}
+.box h2,h3{
+  margin-top:0px;
+}
+.box.nav{
+  float: left;
+  padding-left: 10px;
+  margin: 0px;
+}
+.nav a{
+  font-weight: bold;
+  color: #DADADA;
+  text-decoration: none;
+}
+.nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.box.content{
+  margin-left: 175px;
+  margin-right: 10px;
+}
+.foot{
+  background-color: #565656; text-align: right; color: grey; padding: 10px
+}

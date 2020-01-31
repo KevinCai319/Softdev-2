@@ -1,0 +1,90 @@
+Team thats important - Justin Shaw, Michael Lin, Eric Lam, Ivan Galakhov
+SoftDev1 pd1
+
+galakhovI -- 2019-10-18 8:40
+    Added structure to the project
+    Began work on devlog
+    Began work on database
+linM -- 2019-10-21 7:00
+    Uploaded design doc
+galakhovI -- 2019-10-21 8:30
+    Added routes for login and signup
+    Added html pages for login and signup
+    Began work on database classes
+galakhovI -- 2019-10-21 11:20
+    More work on Sign Up form
+shawJ -- 2019-10-21 21:00
+    Started building some empty pages and routes
+linM -- 2019-10-21 23:00
+    To query data from tables in SQLite, you can use inner join, left join, or cross join
+    INNER JOIN: Matches each row from one table with every row from another table based on the join condition specified after the ON keyword
+    LEFT JOIN: Selects data from the left table and matching rows in the right table based on the join condition - if a row doesn't have a matching row in the right table, then NULL will be the value of columns in the right table
+    CROSS JOIN: Combines every row from the first table with every row from the second table
+    We can use the different join operations to query data from multiple tables easier
+
+    The article talks about how there are always going to be problems with our code and it isn't possible to fix everything at once
+    When we are having issues or have trouble with something, it's important that everyone knows about it. It could prevent a lot of future confusion and save a lot of time for people trying to figure out what's wrong
+    Putting in detailed comments would also help reduce confusion between members in the group. They could help explain how each part of the code could be used and the specific problems people are having.
+galakhovI -- 2019-10-22 8:25
+    Finished code for creating database schema
+    Still working on login
+galakhovI -- 2019-10-22 8:40
+    Finished login
+shawJ -- 2019-10-21 10:00
+    Started building story and story_addition classes
+    Created pages for viewing all stories and each individual story thread
+    Edited design doc for clarity
+shawJ -- 2019-10-22 8:40
+    Worked on class structure and tested initialization
+galakhovI -- 2019-10-22 21:23
+    Finished session management utilities
+galakhovI -- 2019-10-22 21:40
+    More work on database objects
+shawJ -- 2019-10-22 22:00
+    Improved site skeleton
+    Worked on html forms and creating new stories
+    Added display for story threads
+lamE -- 2019-10-22 23:50
+    Improved home page
+    Added skeleton for searching
+    Added skeleton for changing homepage based on whether a user is logged in
+lamE -- 2019-10-23 8:30
+    Completed changing homepage based on whether a user is logged in
+galakhovI -- 2019-10-23 8:40
+    Fixed index issues
+lamE -- 2019-10-23 10:56
+    Cleaned up user homepage
+    User homepage now displays created stories and stories contributed to
+lamE -- 2019-10-24 8:10
+    Cleaned up login and sign up pages
+galakhovI -- 2019-10-24 8:40
+    More database work
+    Finished story object creation
+shawJ -- 2019-10-24 8:40
+    Worked on user profiles
+linM -- 2019-10-24 18:53
+    Finished story_addition object
+    Put a link on each page that takes you back to /home
+    Stories started now show on homepage
+linM -- 2019-10-25 21:21
+    Users can now add to existing stories
+    Users can now only see the whole story if they've contributed before
+shawJ -- 2019-10-26 8:40
+    Improved user profiles
+    Added authors to story thread display
+lamE -- 2019-10-26 1:25
+    Sitewide appearance overhaul
+    Added navigation links
+    Added toggling of author names in a story thread
+galakhovI -- 2019-10-27 11:13
+    Added requirements.txt
+galakhovI -- 2019-10-27 11:55
+    Added instructions on how to run the project
+shawJ -- 2019-10-27 16:00
+    Added timestamps
+shawJ -- 2019-10-27 17:50
+    Updated design docs - updated site map to include search page
+shawJ -- 2019-10-27 19:04
+    Added search query
+linM -- 2019-10-27 20:06
+    Added in sample users and stories to database

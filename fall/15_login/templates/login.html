@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{%block title%}| Login{%endblock%}
+{%block main%}
+<h1>The hardcoded username: {{usr}}</h1>
+<h1>The hardcoded password:  {{psswd}}</h1>
+<form action = "/login_check">
+  <h4>Username:</h4>
+  <input type = "text"  name = "Username">
+  <h4>Password:</h4>
+  <input type = "text"  name = "Password">
+  <input type = "submit" name = "submit" value = "Login">
+</form>
+<h6>Trust us, we have great security.</h6>
+{%endblock%}
