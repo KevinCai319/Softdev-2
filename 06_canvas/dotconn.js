@@ -20,10 +20,13 @@ var draw = function(e) {
     mouseX = e.offsetX;
     // the offset in the Y coordinate of the mouse pointer between that event and the padding edge of the target node
     mouseY = e.offsetY;
-    drawDot(mouseX, mouseY);
+    m = Math.sqrt((mouseY -ldy)*(mouseY -ldy)+(mouseX - ldx)*(mouseX - ldx));
+    dx = (mouseX - ldx)/m*20;
+    dy = (mouseY - ldy)/m*20;
     if(ldx != -1){
-    	line(ldx,ldy,mouseX,mouseY);
+    	line(ldx+dx,ldy+dy,mouseX,mouseY);
     }
+    drawDot(mouseX, mouseY);
     ldx = mouseX;
     ldy = mouseY;
 };
