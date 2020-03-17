@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Query Thy Datasets{% endblock %}
+
+{% block content %}
+<form action="/query">
+  <input type="radio" id="meteorites" name="selectQueryBase" value="meteorites">
+  <label for="meteorites">Meteorites</label>
+  <input type="radio" id="licenses" name="selectQueryBase" value="licenses">
+  <label for="licenses">Licenses</label>
+  <input type="text" name="searchQuery" placeholder="Type thy query...">
+  <input type="submit" value="Search">
+</form>
+{% if response %}
+<div>
+  <h6>Result</h6>
+  <ul>
+    {% for result in results %}
+    <li>{{ result }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% else %}
+<div>
+  <h6>Instructions</h6>
+  <p>Search Format: {Your Query} {Your Constraint}</p>
+  <p>Example: filter::copyleft</p>
+</div>
+{% endif %}
+{% endblock %}
