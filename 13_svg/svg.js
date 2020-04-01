@@ -28,6 +28,7 @@ var circleClick = function(e){
   e.stopPropagation();
   this.remove();
 }
+
 var line = function(x1,y1,x2,y2){
     var line = document.createElementNS(xmlns,"line");
     line.setAttribute("x1",x1);
@@ -59,8 +60,6 @@ var handleClick = function(x,y){
   ly = y;
   needLine = true;
 };
-
-
 
 clearbutton.addEventListener('click', clear);
 svg.addEventListener('click',function(){handleClick(event.offsetX,event.offsetY)});
