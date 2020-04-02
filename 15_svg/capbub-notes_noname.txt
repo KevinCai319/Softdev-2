@@ -1,0 +1,24 @@
+Kevin Cai
+SoftDev pd9
+Team noname
+Spring 2020
+Capture Bubble Toil Trouble
+
+Predictions:
+1:
+  When a table element is clicked, there will be an alert saying the html inside
+  the <td> tag
+2:
+  Same as 1, but now if any part of the table is clicked, the innerHTML will be
+  alerted by the order of how specific the element clicked was. For example, If
+  it was a cell, then the cell contents will be alerted, then HTML code with the
+  table row, then the HTML code within the entire table. If just the border of
+  the table is clicked, only the HTML code within the <table> tag is alerted.
+3:
+  If e.stopPropagation() is uncommented, then only the HTML code within the
+  <table> tag is alerted. The event does not trigger other event listeners.
+  The order usually is from most specific to least specific, but now it seems
+  that adding true as an option makes everything below that level not alert.
+4:
+  If e.stopPropagation() is uncommented, same result as 3. Order of the
+  listeners added doesn't seem to matter.
