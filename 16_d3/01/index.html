@@ -8,7 +8,7 @@
 <!--
 Clyde "Thluffy" Sinclair
 SoftDev2 pd0
-2099-12-31    
+2099-12-31
 -->
 
 <style>
@@ -27,10 +27,7 @@ SoftDev2 pd0
 
 <script src="http://d3js.org/d3.v5.min.js"
 	charset="utf-8"></script>
-
-<!--------------------------------
-    Entering the following commands via console will 
-    incrementally re-create your hardcoded chart...
+<script>
 
     //Init your data:
     var data = [4, 8, 15, 16, 23, 42];
@@ -41,7 +38,7 @@ SoftDev2 pd0
     //Prepare for data join.
     var bar = chart.selectAll("div");
 
-    (this defines selection to which you will join data)
+    // (this defines selection to which you will join data)
 
     //Join your data.
     var barUpdate = bar.data(data);
@@ -55,5 +52,4 @@ SoftDev2 pd0
 
     //Label each bar.
     barEnter.text(function(d) { return d; });
-  -------------------------------->
-  
+  </script>
