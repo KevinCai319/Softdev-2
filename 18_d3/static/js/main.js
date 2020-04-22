@@ -1,24 +1,23 @@
 var schoolData = [];
 var schoolID = 1;
-const d3Load = (type,fp,key) => {
-  type(fp)
-    .then((data) => {
-      localStorage.setItem(key, JSON.stringify(data));
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-};
 const loadData = (key, fp, ext) => {
     //Attempts to get stuff from local storage.
     const rawData = JSON.parse(localStorage.getItem(key));
     //If it doesn't exist then it just goes for the files and puts them there.
     if (!rawData) {
-        console.log('moving to localStorage...');
-        d3Load(ext,fp,key);
+      ext(fp)
+        .then((data) => {
+          localStorage.setItem(key, JSON.stringify(data));
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     }
     return rawData;
 };
+
+
+
 
 var margin = {top: 10, right: 30, bottom: 30, left: 60},
     width = 460 - margin.left - margin.right,
@@ -43,6 +42,9 @@ var yAxis = d3.axisLeft().scale(y);
 svg.append("g")
    .attr("class","myYaxis");
 
+
+
+
 loadPlot = ()=>{
   console.log('yo');
   schoolData = [];
@@ -53,6 +55,7 @@ loadPlot = ()=>{
     schoolData.push(loadData('year'+i.toString(),dir,d3.csv));
   }
 };
+
 
 showPlot = ()=>{
   let tmp = []
