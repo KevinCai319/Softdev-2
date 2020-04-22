@@ -1,10 +1,8 @@
 var schoolData = [];
 var schoolID = 1;
 const loadData = (key, fp, ext) => {
-    //Attempts to get stuff from local storage.
-    const rawData = JSON.parse(localStorage.getItem(key));
     //If it doesn't exist then it just goes for the files and puts them there.
-    if (!rawData) {
+    if (!localStorage.getItem(key)) {
       ext(fp)
         .then((data) => {
           localStorage.setItem(key, JSON.stringify(data));
@@ -13,7 +11,7 @@ const loadData = (key, fp, ext) => {
           console.log(err);
         });
     }
-    return rawData;
+    return JSON.parse(localStorage.getItem(key));
 };
 
 
