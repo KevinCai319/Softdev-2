@@ -1,0 +1,26 @@
+#plot {
+
+}
+
+button {
+  background-color: #ff0000;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+text {
+  color: black;
+  font: Helvetica;
+  font-size: 10px;
+}

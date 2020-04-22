@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- D3-minified -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css')}}"
+    />
+
+    <title>K18: Come Up For Air</title>
+  </head>
+  <body>
+    <h1>History of SHSAT Admissions(2015-2020)</h1>
+    <h2>By team NoName</h2>
+    <button id="renderButton">Render data for past 5 years</button>
+    <button id="startButton">Start</button>
+    <div id="plot"></div>
+
+    <!-- Flask app script -->
+    <script
+      src="{{ url_for('static', filename='js/main.js')}}"
+    ></script>
+  </body>
+</html>
